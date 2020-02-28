@@ -350,6 +350,44 @@ public class Methods {
         }
         System.out.println("Result massive = " + Arrays.toString(mass));
     }
+
+    public void lastElement(){
+        int[] mass = new int[]{0,2,3,54,1,101,2,111,3,12,110,0};
+        System.out.println("Massive values = " + Arrays.toString(mass));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input value for matching = ");
+        String matching = scanner.nextLine();
+        String[] str = new String[mass.length];
+
+        for(int i=0; i < mass.length; i++){
+            str[i] = Integer.toString(mass[i]);
+        }
+
+        int lengthForFinalMassive=str.length;
+        for(int j=0; j < str.length; j++){
+            if(str[j].lastIndexOf(matching)!=str[j].length()-1){
+                str[j]="-";
+                lengthForFinalMassive--;
+            }
+        }
+        System.out.println("Elements selection = " + Arrays.toString(str));
+
+        int[] finalMassive = new int[lengthForFinalMassive];
+
+        int j=0;
+        for(int i=0; i<finalMassive.length; i++) {
+            for (; j < str.length; ) {
+               if (str[j].equals("-") == false) {
+                   finalMassive[i] = Integer.parseInt(str[j]);
+                   j++;
+                   break;
+               }
+               j++;
+           }
+       }
+        System.out.println("Result massive = " + Arrays.toString(finalMassive));
+
+    }
 }
 
 

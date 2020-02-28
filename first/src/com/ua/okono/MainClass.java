@@ -23,6 +23,7 @@ public class MainClass {
         //methods.multipleBy();
         //methods.modulatiry();
         //methods.maxMinAbs();
-        methods.firstMax();
+        //methods.firstMax();
+        methods.lastElement();
     }
 }
