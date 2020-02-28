@@ -22,6 +22,7 @@ public class MainClass {
         //methods.minMaxPairSum();
         //methods.multipleBy();
         //methods.modulatiry();
-        methods.maxMinAbs();
+        //methods.maxMinAbs();
+        methods.firstMax();
     }
 }

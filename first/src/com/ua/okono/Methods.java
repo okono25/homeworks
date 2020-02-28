@@ -325,7 +325,7 @@ public class Methods {
         }
         System.out.println("Multiply of negative values = " + multipleNegative);
         System.out.println("Multiply of positive values = " + multiplePossitive);
-        
+
         if(Math.abs(multipleNegative) > Math.abs(multiplePossitive)){
             System.out.println("Negative amount is > Positive amount");
         } else if(Math.abs(multipleNegative) < Math.abs(multiplePossitive)){
@@ -333,9 +333,22 @@ public class Methods {
         }else{
             System.out.println("Negative amount = Positive amount");
         }
+    }
 
+    public void firstMax(){
+        int[] mass = new int[]{2,2,2,3,1,2,4};
+        System.out.println("Massive values = " + Arrays.toString(mass));
 
-
+        for(int i=0; i<mass.length; i++){
+            if(mass[i] > mass[i+1]){
+                mass[i]=0;
+                break;
+            }else if(mass[i] < mass[i+1]){
+                mass[i+1] = 0;
+                break;
+            }
+        }
+        System.out.println("Result massive = " + Arrays.toString(mass));
     }
 }
 
