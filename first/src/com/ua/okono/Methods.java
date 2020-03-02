@@ -1,52 +1,99 @@
 package com.ua.okono;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Methods {
 
-    public void calculateMultipleBy() {
-        System.out.print("Input massive length = ");
+    /**
+     * Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
+     * @return
+     */
+    public int calculateMultipleBy() {
         Scanner scanner = new Scanner(System.in);
-        int masslength = scanner.nextInt();
+        System.out.print("Input length for random massive = ");
+        int randomMassiveLength = scanner.nextInt();
+        int[] copy = Arrays.copyOf(randomMassive(randomMassiveLength),randomMassiveLength);
+        System.out.println("Random massive generated = " + massPrintByString(copy));
         System.out.print("Input multiple value = ");
-        int multipleValue = scanner.nextInt();
-        int[] mass = new int[masslength];
-
-        for (int i = 0; i < masslength; i++) {
-            mass[i] = (int) (1 + Math.random() * 20);
-        }
-
-        System.out.println("Random math generated = " + Arrays.toString(mass));
+        int multipleByValue = scanner.nextInt();
         int sumByMultipl = 0;
-        for (int j = 0; j < masslength; j++) {
-            if (mass[j] % multipleValue == 0) {
-                sumByMultipl += mass[j];
+
+        for (int i = 0; i < copy.length; i++) {
+            if (copy[i] % multipleByValue == 0) {
+                sumByMultipl += copy[i];
             }
         }
-        System.out.printf("The summ of elements multiple by %d = %d", multipleValue, sumByMultipl);
+        System.out.printf("The summ of elements multiple by %d = %d", multipleByValue, sumByMultipl);
+        return sumByMultipl;
+    }
+
+    /**
+     * В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
+     * by list
+     * @param index
+     */
+    public void createMassiveFromIndexList(int index) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input length for random list = ");
+        int randomListLength = scanner.nextInt();
+        System.out.print("Random list generated = ");
+        ArrayList<Integer> list = new ArrayList<>(randomList(randomListLength));
+        printByBruteForce(list);
+        ArrayList<Integer> result = new ArrayList<>();
+        System.out.println();
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == index) {
+                result.add(i);
+            }
+        }
+        if(result.size() > 0) {
+            System.out.printf("Array of indexes for elements that equals to %d = ", index);
+            printByBruteForce(result);
+        }else
+            System.out.printf("No elements found that equals to %d ",index);
+    }
+
+    /**
+     * В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
+     * by Array
+     * @param index
+     */
+    public void createMassiveFromIndexMassive(int index) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input length for random massive = ");
+        int randomMassiveLength = scanner.nextInt();
+        System.out.print("Random massive generated = ");
+        int[] mass = randomMassive(randomMassiveLength);
+        printByBruteForce(mass);
+        int count=0;
+
+        for(int i=0; i < mass.length; i++){
+               if(mass[i] == index){
+                   count++;
+               }
+        }
+        int[] result = new int[count];
+        int counter = 0;
+
+        for (int j = 0; j < mass.length; j++) {
+            if (mass[j] == index) {
+                result[counter] = j;
+                counter++;
+            }
+        }
+        System.out.println();
+        if (result.length > 0) {
+            System.out.printf("Array of indexes for elements that equals to %d = ",index);
+            printByBruteForce(result);
+        }else
+            System.out.printf("No elements found that equals to %d ",index);
     }
 
 
-    public void createMassiveWithIndex0() {
-        int[] mainMass = new int[]{0, 1, 0, 5, 6, 0, 0, 1, 0};
-        ArrayList<Integer> resultList = new ArrayList<Integer>();
-        for (int i = 0; i < mainMass.length; i++) {
-            if (mainMass[i] == 0) {
-                resultList.add(i);
-            }
-        }
-
-        System.out.print("Array of indexes for elements that equals to 0 = ");
-
-        for (int j = 0; j < resultList.size(); j++) {
-            System.out.print(resultList.get(j) + " ");
-        }
-    }
 
     public void fisrstPossitiveOrNagative(){
         int[] massive = new int[]{0,-1,2};
@@ -365,8 +412,8 @@ public class Methods {
 
         int lengthForFinalMassive=str.length;
         for(int j=0; j < str.length; j++){
-            if(str[j].lastIndexOf(matching)!=str[j].length()-1){
-                str[j]="-";
+            if(str[j].lastIndexOf(matching) != str[j].length()-1){
+                str[j] = "-";
                 lengthForFinalMassive--;
             }
         }
@@ -375,7 +422,7 @@ public class Methods {
         int[] finalMassive = new int[lengthForFinalMassive];
 
         int j=0;
-        for(int i=0; i<finalMassive.length; i++) {
+        for(int i=0; i < finalMassive.length; i++) {
             for (; j < str.length; ) {
                if (str[j].equals("-") == false) {
                    finalMassive[i] = Integer.parseInt(str[j]);
@@ -387,6 +434,36 @@ public class Methods {
        }
         System.out.println("Result massive = " + Arrays.toString(finalMassive));
 
+    }
+
+    private int[] randomMassive(int length){
+        int[] massive = new int[length];
+        for(int i=0; i<massive.length; i++){
+            massive[i] = (int)(Math.random()* 10);
+        }
+        return massive;
+    }
+
+    private ArrayList<Integer> randomList(int listLength){
+        ArrayList<Integer> list = new ArrayList<>(listLength);
+        for(int i=0; i<listLength; i++){
+            list.add((int)(Math.random()* 10));
+        }
+        return list;
+    }
+    private String massPrintByString(int [] mass){
+        return Arrays.toString(mass);
+    }
+
+    private void printByBruteForce(int [] mass){
+        for(int i=0; i<mass.length; i++){
+            System.out.print(" " + mass[i] + " ");
+        }
+    }
+    private void printByBruteForce(ArrayList<Integer> list){
+        for(int i=0; i<list.size(); i++){
+            System.out.print(" " + list.get(i) + " ");
+        }
     }
 }
 

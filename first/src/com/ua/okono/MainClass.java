@@ -8,7 +8,8 @@ public class MainClass {
        // returnDate.getTime();
         Methods methods = new Methods();
        // methods.calculateMultipleBy();
-       // methods.createMassiveWithIndex0();
+        //methods.createMassiveFromIndexList(5);
+        methods.createMassiveFromIndexMassive(5);
         // methods.fisrstPossitiveOrNagative();
         //methods.sortingAsc();
         //methods.pairElementsCheck();
@@ -24,6 +25,6 @@ public class MainClass {
         //methods.modulatiry();
         //methods.maxMinAbs();
         //methods.firstMax();
-        methods.lastElement();
+        //methods.lastElement();
     }
 }
