@@ -7,8 +7,8 @@ public class MainClass {
         //methods.calculateMultipleBy();
         //methods.createMassiveFromIndexList(5);
         //methods.createMassiveFromIndexMassive(5);
-        //methods.firstPositiveOrNegative(10);
-        //methods.isSortingAsc(10);
+        //methods.firstPositiveOrNegative(3);
+        methods.isSortingAsc(10);
         //methods.pairElementsCheck();
         //methods.digitReplacement(10);
         //methods.positiveNegativeZero(14);

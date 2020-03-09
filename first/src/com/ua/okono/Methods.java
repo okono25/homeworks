@@ -11,23 +11,30 @@ public class Methods {
      * @return
      */
     public int calculateMultipleBy() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input length for random massive = ");
-        int randomMassiveLength = scanner.nextInt();
-        int[] copy = Arrays.copyOf(randomMassive(randomMassiveLength),randomMassiveLength);
-        System.out.print("Random massive generated = ");
-        massPrintByString(copy);
-        System.out.print("Input multiple value = ");
-        int multipleByValue = scanner.nextInt();
-        int sumByMultipl = 0;
 
-        for (int i = 0; i < copy.length; i++) {
-            if (copy[i] % multipleByValue == 0) {
-                sumByMultipl += copy[i];
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Input length for random massive = ");
+            int randomMassiveLength = scanner.nextInt();
+            int[] copy = Arrays.copyOf(randomMassive(randomMassiveLength), randomMassiveLength);
+            System.out.print("Random massive generated = ");
+            massPrintByString(copy);
+            System.out.print("Input multiple value = ");
+            int multipleByValue = scanner.nextInt();
+            int sumByMultipl = 0;
+
+            for (int i = 0; i < copy.length; i++) {
+                if (copy[i] % 0 == 0) {
+                    sumByMultipl += copy[i];
+                }
             }
+            System.out.printf("The summ of elements multiple by %d = %d", multipleByValue, sumByMultipl);
+            return sumByMultipl;
+        } catch (ArithmeticException ex){
+            ex.printStackTrace();
+            System.out.println("Arithmetic error has happened");
+            return -1;
         }
-        System.out.printf("The summ of elements multiple by %d = %d", multipleByValue, sumByMultipl);
-        return sumByMultipl;
     }
 
     /**
@@ -36,25 +43,31 @@ public class Methods {
      * @param index
      */
     public void createMassiveFromIndexList(int index) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input length for random list = ");
-        int randomListLength = scanner.nextInt();
-        System.out.print("Random list generated = ");
-        ArrayList<Integer> list = new ArrayList<>(randomList(randomListLength));
-        printByBruteForce(list);
-        ArrayList<Integer> result = new ArrayList<>();
-        System.out.println();
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Input length for random list = ");
+            int randomListLength = scanner.nextInt();
+            System.out.print("Random list generated = ");
+            ArrayList<Integer> list = new ArrayList<>(randomList(randomListLength));
+            printByBruteForce(list);
+            ArrayList<Integer> result = new ArrayList<>();
+            System.out.println();
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == index) {
-                result.add(i);
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i) == index) {
+                    result.add(i);
+                }
             }
+            if (result.size() > 0) {
+                System.out.printf("Array of indexes for elements that equals to %d = ", index);
+                printByBruteForce(result);
+            } else
+                System.out.printf("No elements found that equals to %d ", index);
         }
-        if(result.size() > 0) {
-            System.out.printf("Array of indexes for elements that equals to %d = ", index);
-            printByBruteForce(result);
-        }else
-            System.out.printf("No elements found that equals to %d ",index);
+        catch(IndexOutOfBoundsException ex){
+           ex.printStackTrace();
+            System.out.println("IndexOutOFBound error has happened");
+        }
     }
 
     /**
@@ -63,34 +76,39 @@ public class Methods {
      * @param index
      */
     public void createMassiveFromIndexMassive(int index) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input length for random massive = ");
-        int randomMassiveLength = scanner.nextInt();
-        System.out.print("Random massive generated = ");
-        int[] mass = randomMassive(randomMassiveLength);
-        printByBruteForce(mass);
-        int count=0;
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Input length for random massive = ");
+            int randomMassiveLength = scanner.nextInt();
+            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
+            printByBruteForce(mass);
+            int count = 0;
 
-        for(int i=0; i < mass.length; i++){
-               if(mass[i] == index){
-                   count++;
-               }
-        }
-        int[] result = new int[count];
-        int counter = 0;
-
-        for (int j = 0; j < mass.length; j++) {
-            if (mass[j] == index) {
-                result[counter] = j;
-                counter++;
+            for (int i = 0; i < mass.length; i++) {
+                if (mass[i] == index) {
+                    count++;
+                }
             }
+            int[] result = new int[count];
+            int counter = 0;
+
+            for (int j = 0; j < mass.length; j++) {
+                if (mass[j] == index) {
+                    result[counter] = j;
+                    counter++;
+                }
+            }
+            System.out.println();
+            if (result.length > 0) {
+                System.out.printf("Array of indexes for elements that equals to %d = ", index);
+                printByBruteForce(result);
+            } else
+                System.out.printf("No elements found that equals to %d ", index);
+        }catch (IndexOutOfBoundsException ex){
+            ex.printStackTrace();
+            System.out.println("IndexOutOFBound error has happened");
         }
-        System.out.println();
-        if (result.length > 0) {
-            System.out.printf("Array of indexes for elements that equals to %d = ",index);
-            printByBruteForce(result);
-        }else
-            System.out.printf("No elements found that equals to %d ",index);
     }
 
     /**
@@ -99,20 +117,24 @@ public class Methods {
      * @param length
      */
     public void firstPositiveOrNegative(int length){
-        int[] massive = randomMassive(length);
-        System.out.print("Random massive generated = ");
-        massPrintByString(massive);
+        try {
+            int[] massive = randomMassive(length);
+            System.out.print("Random massive generated = ");
+            massPrintByString(massive);
 
-       for(int i=0; i < massive.length; i++){
-           if(massive[i] < 0){
-               System.out.println("First element is negative");
-               break;
-           }else if(massive[i] > 0){
-               System.out.println("First element is possitive");
-               break;
-           }else
-               continue;
-       }
+            for (int i = 1; i < massive.length; i++) {
+                if (massive[i] < 0) {
+                    System.out.println("First element is negative");
+                    break;
+                } else if (massive[i] > 0) {
+                    System.out.println("First element is possitive");
+                    break;
+                }
+            }
+        }catch (IndexOutOfBoundsException ex){
+            ex.printStackTrace();
+            System.out.println("IndexOutOFBound error has happened");
+        }
     }
 
     /**
@@ -121,23 +143,34 @@ public class Methods {
      * @return
      */
     public int[] isSortingAsc(int length){
-        int[] massive = randomMassive(length);
-        System.out.print("Random massive generated = ");
-        massPrintByString(massive);
-        Arrays.sort(massive,0,massive.length); //comment this line for result changes
-        int errorcounter = 0;
+        int[] mass;
+        try {
+            int[] massive = randomMassive(length);
+            System.out.print("Random massive generated = ");
+            massPrintByString(massive);
+            //Arrays.sort(massive, 0, massive.length); //comment this line for result changes
+            int errorcounter = 0;
 
-        for(int i=0; i < massive.length-1; i++){
-            if(massive[i] > massive[i+1]){
-                errorcounter++;
+            for (int i = -1; i < massive.length - 1; i++) {
+                if (massive[i] > massive[i + 1]) {
+                    errorcounter++;
+                }
             }
+            if (errorcounter > 0) {
+                System.out.print("Massive isn't sorted asc - ");
+            } else
+                System.out.print("Massive is sorted asc - ");
+            massPrintByString(massive);
+            mass = Arrays.copyOf(massive,massive.length);
+            return mass;
+        }catch (Exception ex){
+            ex.printStackTrace();
+            System.out.println("Error has happened");
+            //int[] falsemassive = new int[1];
+           // return falsemassive;
+            mass = new int[]{-1};
+           return mass;
         }
-        if(errorcounter > 0){
-            System.out.print("Massive isn't sorted asc - ");
-        }else
-        System.out.print("Massive is sorted asc - ");
-        massPrintByString(massive);
-        return massive;
     }
 
     /**
@@ -170,7 +203,6 @@ public class Methods {
             System.out.print("Massive from pair elements = ");
         massPrintByString(masspair);
         return masspair;
-
     }
 
     /**
