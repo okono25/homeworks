@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe215a01-a327-4d21-a673-edd7eb5c02ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ua/okono/AlexException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/first/com/ua/okono/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/first/com/ua/okono/MainClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/first/com/ua/okono/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/first/com/ua/okono/Methods.class" afterDir="false" />
@@ -72,24 +71,28 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1583846998895">
+    <state width="1340" height="281" key="GridCell.Tab.0.bottom" timestamp="1584366866057">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1340" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584366866057" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583846998895" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583783834320" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1583846998895">
+    <state width="1340" height="281" key="GridCell.Tab.0.center" timestamp="1584366866057">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1340" height="281" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584366866057" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583846998895" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583783834320" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1583846998895">
+    <state width="1340" height="281" key="GridCell.Tab.0.left" timestamp="1584366866057">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1340" height="281" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584366866057" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583846998895" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583783834320" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1583846998895">
+    <state width="1340" height="281" key="GridCell.Tab.0.right" timestamp="1584366866057">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1340" height="281" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584366866057" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583846998895" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583783834320" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583838865323">
@@ -120,5 +123,13 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2691" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583836070556" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1584360097230">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584360097230" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584366559403">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584366559403" />
   </component>
 </project>

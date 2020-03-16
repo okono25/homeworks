@@ -7,18 +7,14 @@ import java.util.Scanner;
 public class Methods {
     /**
      * Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
-     * @return Calculated value of digits that are multiple by multiple value
+     * @param randomMassiveLength
+     * @param multipleByValue
+     * @return
      */
-    public int calculateMultipleBy() {
+    public int calculateMultipleBy(int randomMassiveLength, int multipleByValue) {
         try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Input length for random massive = ");
-            int randomMassiveLength = scanner.nextInt();
-            int[] copy = Arrays.copyOf(randomMassive(randomMassiveLength), randomMassiveLength);
-            System.out.print("Random massive generated = ");
+            int[] copy = randomMassive(randomMassiveLength);
             massPrintByString(copy);
-            System.out.print("Input multiple value = ");
-            int multipleByValue = scanner.nextInt();
             int sumByMultipl = 0;
 
             for (int i = 0; i < copy.length; i++) {
@@ -38,15 +34,12 @@ public class Methods {
     /**
      * В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
      * by list
+     * @param randomListLength
      * @param index
      */
-    public void createMassiveFromIndexList(int index) {
+    public void createMassiveFromIndexList(int randomListLength, int index) {
         try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Input length for random list = ");
-            int randomListLength = scanner.nextInt();
-            System.out.print("Random list generated = ");
-            ArrayList<Integer> list = new ArrayList<>(randomList(randomListLength));
+            ArrayList<Integer> list = randomList(randomListLength);
             printByBruteForce(list);
             ArrayList<Integer> result = new ArrayList<>();
             System.out.println();
@@ -70,14 +63,11 @@ public class Methods {
     /**
      * В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
      * by Array
+     * @param randomMassiveLength
      * @param index
      */
-    public void createMassiveFromIndexMassive(int index) {
+    public void createMassiveFromIndexMassive(int randomMassiveLength, int index) {
         try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Input length for random massive = ");
-            int randomMassiveLength = scanner.nextInt();
-            System.out.print("Random massive generated = ");
             int[] mass = randomMassive(randomMassiveLength);
             printByBruteForce(mass);
             int count = 0;
@@ -107,43 +97,43 @@ public class Methods {
             System.out.println("IndexOutOFBound error has happened");
         }
     }
-
+    
     /**
      * Дан целочисленный массив чисел (положительных и отрицательных). Выяснить, какое число
-     *  встречается раньше – положительное или отрицательное.
-     * @param length
+     * встречается раньше – положительное или отрицательное.
+     * @param randomMassiveLength
+     * @return
      */
-    public void firstPositiveOrNegative(int length){
+    public String firstPositiveOrNegative(int randomMassiveLength){
         try {
-            int[] massive = randomMassive(length);
-            System.out.print("Random massive generated = ");
+            int[] massive = randomMassive(randomMassiveLength);
             massPrintByString(massive);
 
             for (int i = 0; i < massive.length; i++) {
                 if (massive[i] < 0) {
                     System.out.println("First element is negative");
-                    break;
+                   return "1";
                 } else if (massive[i] > 0) {
-                    System.out.println("First element is possitive");
-                    break;
+                    System.out.println("First element is positive");
+                    return "1";
                 }
             }
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
         }
+        return "-1";
     }
 
     /**
      * Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.
-     * @param length
+     * @param randomMassiveLength
      * @return
      */
-    public int[] isSortingAsc(int length){
-        int[] mass;
+    public int[] isSortingAsc(int randomMassiveLength){
+        int[] mass = new int[]{-1};
         try {
-            int[] massive = randomMassive(length);
-            System.out.print("Random massive generated = ");
+            int[] massive = randomMassive(randomMassiveLength);
             massPrintByString(massive);
             Arrays.sort(massive, 0, massive.length); //comment this line for result changes
             int errorcounter = 0;
@@ -158,12 +148,10 @@ public class Methods {
             } else
                 System.out.print("Massive is sorted asc - ");
             massPrintByString(massive);
-            mass = Arrays.copyOf(massive,massive.length);
-            return mass;
+            return massive;
         } catch (Exception ex){
             ex.printStackTrace();
             System.out.println("Error has happened");
-            mass = new int[]{-1};
            return mass;
         }
     }
@@ -171,12 +159,13 @@ public class Methods {
     /**
      * Дан массив чисел. Создать массив из четных чисел этого массива. Если таких чисел нет, то вывести
      * сообщение об этом факте.
+     * @param randomMassiveLength
+     * @return
      */
-    public int[] pairElementsCheck(){
-        int[] result;
+    public int[] pairElementsCheck(int randomMassiveLength){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = randomMassive(6);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int counter = 0;
 
@@ -195,35 +184,30 @@ public class Methods {
                 }
             }
             if (counter == 0) {
-                System.out.println("There aren't pair elements");
+                System.out.print("There aren't pair elements = ");
             } else
                 System.out.print("Massive from pair elements = ");
             massPrintByString(masspair);
-            result = Arrays.copyOf(masspair,masspair.length);
-            return result;
+            return masspair;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         }
     }
 
     /**
-     *Дан массив чисел. Заменить все его элементы, большие данного числа Z, этим числом. Подсчитать
+     * Дан массив чисел. Заменить все его элементы, большие данного числа Z, этим числом. Подсчитать
      * количество замен.
-     * @param length
+     * @param randomMassiveLength
+     * @param elementForReplacement
      * @return
      */
-    public int[] digitReplacement(int length){
-        int[] result;
+    public int[] digitReplacement(int randomMassiveLength, int elementForReplacement){
+        int[] result = new int[]{-1};
         try {
-            Scanner scanner = new Scanner(System.in);
-            int[] massRandom = randomMassive(length);
-            System.out.print("Random massive generated = ");
+            int[] massRandom = randomMassive(randomMassiveLength);
             massPrintByString(massRandom);
-            System.out.print("Input element for replacement = ");
-            int elementForReplacement = scanner.nextInt();
             int counter=0;
 
             for (int i = 0; i < massRandom.length; i++) {
@@ -232,21 +216,18 @@ public class Methods {
                 } else
                     counter++;
             }
-            if (counter==massRandom.length){
+            if (counter == massRandom.length){
                 throw new AlexException("Element is bigger than all the elements. Replacement isn't performed"); //my exception example
             }
-            System.out.println("Massive from replaced elements = ");
+            System.out.print("Massive from replaced elements = ");
             massPrintByString(massRandom);
-            result = Arrays.copyOf(massRandom,massRandom.length);
-            return result;
+            return massRandom;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            result = new int[]{-1};
             System.out.println("IndexOutOFBound error has happened");
             return result;
         } catch (AlexException ex){
             ex.printStackTrace();
-            result = new int[]{-1};
             return result;
         }
     }
@@ -254,12 +235,11 @@ public class Methods {
     /**
      * Дан массив чисел. Подсчитать, сколько в нем отрицательных, положительных и нулевых
      * элементов.
-     * @param length
+     * @param randomMassiveLength
      */
-    public void positiveNegativeZero(int length){
+    public void positiveNegativeZero(int randomMassiveLength){
         try {
-            int[] mass = randomMassive(length);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int possitive = 0;
             int negative = 0;
@@ -273,9 +253,9 @@ public class Methods {
                 } else
                     zeroes++;
             }
-            System.out.println("Positive digits= " + possitive);
-            System.out.println("Negative digits= " + negative);
-            System.out.println("Zeroes digits= " + zeroes);
+            System.out.println("Positive digits = " + possitive);
+            System.out.println("Negative digits = " + negative);
+            System.out.println("Zeroes digits = " + zeroes);
         } catch(IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
@@ -284,22 +264,21 @@ public class Methods {
 
     /**
      * Дан массив чисел. Поменять местами наибольший и наименьший элементы.
-     * @param length
+     * @param randomMassiveLength
      * @return
      */
-    public int[] minMaxReplacement(int length){
-        int[] result;
+    public int[] minMaxReplacement(int randomMassiveLength){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = randomMassive(length);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int max = mass[0];
             int min = mass[0];
 
             for (int i = 0; i < mass.length; i++) {
-                if (mass[i] > max) {
+                if (mass[i] >= max) {
                     max = mass[i];
-                } else if (mass[i] < min) {
+                } else if (mass[i] <= min) {
                     min = mass[i];
                 }
             }
@@ -308,17 +287,11 @@ public class Methods {
             int maxIndexCounter = 0;
             int minIndexCounter = 0;
 
-            for (int j = 0; j < mass.length; j++) {
-                if (mass[j] == max) {
-                    break;
-                }
-                maxIndexCounter++;
-            }
+           while(mass[maxIndexCounter] < max){
+               maxIndexCounter++;
+           }
 
-            for (int k = 0; k < mass.length; k++) {
-                if (mass[k] == min) {
-                    break;
-                }
+            while(mass[minIndexCounter] > min){
                 minIndexCounter++;
             }
             int temp = mass[maxIndexCounter];
@@ -326,25 +299,22 @@ public class Methods {
             mass[minIndexCounter] = temp;
             System.out.print("Finish massive with replaced min and max element = ");
             massPrintByString(mass);
-            result = Arrays.copyOf(mass,mass.length);
-            return result;
+            return mass;
         } catch(IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         }
     }
 
     /**
      * Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i] ≤ i.
-     * @param lengthMass
+     * @param randomMassiveLength
      * @param valueLimitation
      */
-    public void lessThanValue(int lengthMass, int valueLimitation){
+    public void lessThanValue(int randomMassiveLength, int valueLimitation){
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             System.out.println("Value for limitation = " + valueLimitation);
             int errorCount = 0;
@@ -368,16 +338,15 @@ public class Methods {
 
     /**
      * Дан массив чисел. Вывести те числа, у которых остаток от деления на число М равен L.
-     * @param lengthMass
+     * @param randomMassiveLength
      * @param divisionValue
      * @param remainder
      * @return
      */
-    public int[] remainderFromDivision(int lengthMass, int divisionValue, int remainder){
-        int[] resMass;
+    public int[] remainderFromDivision(int randomMassiveLength, int divisionValue, int remainder){
+        int[] resMass = new int[]{-1};
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int counter = 0;
 
@@ -397,50 +366,42 @@ public class Methods {
             }
             if (counter == 0) {
                 throw new AlexException("There aren't values where remainder from divider " + divisionValue + " = " + remainder);
-
             }else
-                System.out.println("Result massive = ");
+                System.out.print("Result massive = ");
             massPrintByString(result);
-            resMass = Arrays.copyOf(result,result.length);
-            return resMass;
+            return result;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            resMass = new int[]{-1};
             return resMass;
         } catch (AlexException ex){
             ex.printStackTrace();
-            resMass = new int[]{-1};
             return resMass;
         }
     }
 
     /**
      * Дан массив чисел. Поменять местами соседние элементы (а[0] и а[1], а[2] и а[3], …)
-     * @param lengthMass
+     * @param randomMassiveLength
      * @return
      */
-    public int[] replace(int lengthMass){
-        int[] result;
+    public int[] replace(int randomMassiveLength){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
 
-            for (int i = 0; i < mass.length - 1; ) {
+            for (int i = 0; i < mass.length - 1; i = i + 2) {
                 int temp;
                 temp = mass[i];
                 mass[i] = mass[i + 1];
                 mass[i + 1] = temp;
-                i = i + 2;
             }
             System.out.println("Result massive = " + Arrays.toString(mass));
-            result = Arrays.copyOf(mass,mass.length);
-            return result;
+            return mass;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         }
     }
@@ -448,20 +409,20 @@ public class Methods {
     /**
      * Дан массив чисел, среди которых имеется один нуль. Вывести на печать все числа, включительно
      * до нуля.
+     * @param randomMassiveLength
      */
-    public void beforeZeroPrint(int lengthMass){
+    public void beforeZeroPrint(int randomMassiveLength){
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int counter = 0;
 
-            for (int i = 0; i < mass.length; i++) {
-                if (mass[i] == 0) {
-                    break;
-                } else
-                    System.out.print(mass[i] + " ");
-                counter++;
+            while(counter <= mass.length-1){
+                if(mass[counter] != 0) {
+                    System.out.print(mass[counter] + " ");
+                    counter++;
+                }else
+                counter=mass.length + 1;
             }
             if (counter == mass.length){
                 System.out.println(" ");
@@ -477,12 +438,11 @@ public class Methods {
 
     /**
      * Дан массив чисел. Найти  mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).
-     * @param lengthMass
+     * @param randomMassiveLength
      */
-    public void minMaxPairSum(int lengthMass){
+    public void minMaxPairSum(int randomMassiveLength){
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int max = mass[0];
             int min = mass[1];
@@ -493,7 +453,7 @@ public class Methods {
                 }
             }
 
-            for (int j = 3; j < mass.length; j = j + 2 ) {
+            for (int j = 3; j < mass.length; j = j + 2) {
                 if (min >= mass[j]) {
                     min = mass[j];
                 }
@@ -510,14 +470,13 @@ public class Methods {
     /**
      * Дан массив целых положительных чисел. Найти произведение только тех чисел, которые больше
      * заданного числа М. Если таких нет, то выдать сообщение об этом.
-     * @param lengthMass
+     * @param randomMassiveLength
      * @param value
      * @return
      */
-    public int multipleBy(int lengthMass, int value){
+    public int multipleBy(int randomMassiveLength, int value){
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int counter = 0;
             int multiple = 1;
@@ -544,15 +503,15 @@ public class Methods {
     }
 
     /**
-     * 16. Дан массив положительных и отрицательных чисел.  Заменить нулями те числа, величина которых
+     * Дан массив положительных и отрицательных чисел.  Заменить нулями те числа, величина которых
      * по модулю больше максимального числа (|a[i]| > max{ a[0], a[1], ..., a[n]})
-     * @param lengthMass
+     * @param randomMassiveLength
+     * @return
      */
-    public int[] modularity(int lengthMass){
-        int[] result;
+    public int[] modularity(int randomMassiveLength){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int max = mass[0];
 
@@ -570,12 +529,10 @@ public class Methods {
             }
             System.out.print("Result massive = ");
             massPrintByString(mass);
-            result = Arrays.copyOf(mass,mass.length);
-            return result;
+            return mass;
         }catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         }
     }
@@ -584,12 +541,11 @@ public class Methods {
      * Дан массив чисел с положительными и отрицательными элементы. Вычислить произведение
      * отрицательных элементов P 1  и произведение положительных элементов Р 2 . Сравнить модуль Р 2  с
      * модулем Р 1  и указать, какое из произведений по модулю больше.
-      * @param lengthMass
+     * @param randomMassiveLength
      */
-    public void maxMinAbs(int lengthMass){
+    public void maxMinAbs(int randomMassiveLength){
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
             int multipleNegative = 1;
             int multiplePossitive = 1;
@@ -630,13 +586,13 @@ public class Methods {
     /**
      * Дан массив чисел. Среди них есть равные. Найти первый максимальный элемент массива и
      * заменить его нулем.
-     * @param lengthMass
+     * @param randomMassiveLength
+     * @return
      */
-    public int[] firstMax(int lengthMass){
-        int[] result;
+    public int[] firstMax(int randomMassiveLength){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = randomMassive(lengthMass);
-            System.out.print("Random massive generated = ");
+            int[] mass = randomMassive(randomMassiveLength);
             massPrintByString(mass);
 
             for (int i = 0; i < mass.length; i++) {
@@ -650,12 +606,10 @@ public class Methods {
             }
             System.out.print("Result massive = ");
             massPrintByString(mass);
-            result = Arrays.copyOf(mass,mass.length);
-            return result;
+            return mass;
         }catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         }
     }
@@ -663,16 +617,16 @@ public class Methods {
     /**
      * Дан массив чисел. Образовать новый массив, элементами которого будут элементы исходного,
      * оканчивающиеся на цифру k.
+     * @param randomMassiveLength
+     * @param matchingValue
      * @return
      */
-    public int[] lastElement(){
-        int[] result;
+    public int[] lastElement(int randomMassiveLength, int matchingValue){
+        int[] result = new int[]{-1};
         try {
-            int[] mass = new int[]{0, 2, 3, 54, 1, 101, 2, 111, 3, 12, 110, 0};
-            System.out.println("Massive values = " + Arrays.toString(mass));
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Input value for matching = ");
-            String matching = scanner.nextLine();
+            int[] mass = randomMassive(randomMassiveLength);
+            massPrintByString(mass);
+            String matching = Integer.toString(matchingValue);
             String[] str = new String[mass.length];
 
             for (int i = 0; i < mass.length; i++) {
@@ -703,18 +657,15 @@ public class Methods {
             if(finalMassive.length != 0){
                 System.out.print("Result massive = ");
                 massPrintByString(finalMassive);
-                result = Arrays.copyOf(finalMassive, finalMassive.length);
-                return result;
+                return finalMassive;
             }else
                 throw new AlexException("There aren't digits that finished on " + matching + " value");
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
             System.out.println("IndexOutOFBound error has happened");
-            result = new int[]{-1};
             return result;
         } catch (AlexException ex){
             ex.printStackTrace();
-            result = new int[]{-1};
             return result;
         }
     }
@@ -724,6 +675,7 @@ public class Methods {
         for(int i=0; i<massive.length; i++){
             massive[i] = (int)(-3 + (Math.random()* 12));
         }
+        System.out.print("Random massive generated = ");
         return massive;
     }
 
@@ -732,6 +684,7 @@ public class Methods {
         for(int i=0; i<listLength; i++){
             list.add((int)(Math.random()* 10));
         }
+        System.out.print("Random list generated = ");
         return list;
     }
 
@@ -749,6 +702,11 @@ public class Methods {
         for(int i=0; i<list.size(); i++){
             System.out.print(" " + list.get(i) + " ");
         }
+    }
+
+    private int scanner(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 }
 
