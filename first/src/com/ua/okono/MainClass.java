@@ -7,10 +7,10 @@ public class MainClass {
         //methods.calculateMultipleBy(8,2);
         //methods.createMassiveFromIndexList(10,0);
         //methods.createMassiveFromIndexMassive(10,0);
-        //methods.firstPositiveOrNegative(3);
+        //methods.firstPositiveOrNegative(5);
         //methods.isSortingAsc(10);
-        //methods.pairElementsCheck(1);
-        //methods.digitReplacement(10,3);
+        //methods.pairElementsCheck(5);
+        //methods.digitReplacement(10,15);
         //methods.positiveNegativeZero(14);
         //methods.minMaxReplacement(6);
         //methods.lessThanValue(10,2);
@@ -20,8 +20,8 @@ public class MainClass {
         //methods.minMaxPairSum(5);
         //methods.multipleBy(5,3);
         //methods.modularity(4);
-        //methods.maxMinAbs(4);
+        //methods.maxMinAbs(5);
         //methods.firstMax(5);
-        methods.lastElement(10,2);
+        //methods.lastElement(10,2);
     }
 }

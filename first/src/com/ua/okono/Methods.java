@@ -1,10 +1,14 @@
 package com.ua.okono;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Methods {
+
+    public static Logger logger = Logger.getLogger(Methods.class);
     /**
      * Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
      * @param randomMassiveLength
@@ -14,7 +18,6 @@ public class Methods {
     public int calculateMultipleBy(int randomMassiveLength, int multipleByValue) {
         try {
             int[] copy = randomMassive(randomMassiveLength);
-            massPrintByString(copy);
             int sumByMultipl = 0;
 
             for (int i = 0; i < copy.length; i++) {
@@ -22,15 +25,14 @@ public class Methods {
                     sumByMultipl += copy[i];
                 }
             }
-            System.out.printf("The summ of elements multiple by %d = %d", multipleByValue, sumByMultipl);
+            logger.info("The summ of elements multiple by "+ multipleByValue+ " = " + sumByMultipl);
             return sumByMultipl;
         } catch (ArithmeticException ex){
             ex.printStackTrace();
-            System.out.println("Arithmetic error has happened");
+            logger.error("Arithmetic error has happened");
             return -1;
         }
     }
-
     /**
      * В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
      * by list
@@ -42,7 +44,6 @@ public class Methods {
             ArrayList<Integer> list = randomList(randomListLength);
             printByBruteForce(list);
             ArrayList<Integer> result = new ArrayList<>();
-            System.out.println();
 
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) == index) {
@@ -50,13 +51,12 @@ public class Methods {
                 }
             }
             if (result.size() > 0) {
-                System.out.printf("Array of indexes for elements that equals to %d = ", index);
-                printByBruteForce(result);
+                logger.info("Array of indexes for elements that equals to " + index + " = "+ listPrintByString(result));
             } else
-                System.out.printf("No elements found that equals to %d ", index);
+                logger.info("No elements found that equals to " + index);
         } catch(IndexOutOfBoundsException ex){
            ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         }
     }
 
@@ -69,7 +69,6 @@ public class Methods {
     public void createMassiveFromIndexMassive(int randomMassiveLength, int index) {
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            printByBruteForce(mass);
             int count = 0;
 
             for (int i = 0; i < mass.length; i++) {
@@ -86,18 +85,16 @@ public class Methods {
                     counter++;
                 }
             }
-            System.out.println();
             if (result.length > 0) {
-                System.out.printf("Array of indexes for elements that equals to %d = ", index);
-                printByBruteForce(result);
+                logger.info("Array of indexes for elements that equals to " + index + " = " + massPrintByString(result));
             } else
-                System.out.printf("No elements found that equals to %d ", index);
+                logger.error("No elements found that equals to " + index);
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         }
     }
-    
+
     /**
      * Дан целочисленный массив чисел (положительных и отрицательных). Выяснить, какое число
      * встречается раньше – положительное или отрицательное.
@@ -107,20 +104,19 @@ public class Methods {
     public String firstPositiveOrNegative(int randomMassiveLength){
         try {
             int[] massive = randomMassive(randomMassiveLength);
-            massPrintByString(massive);
 
             for (int i = 0; i < massive.length; i++) {
                 if (massive[i] < 0) {
-                    System.out.println("First element is negative");
+                    logger.info("First element is negative");
                    return "1";
                 } else if (massive[i] > 0) {
-                    System.out.println("First element is positive");
+                    logger.info("First element is positive");
                     return "1";
                 }
             }
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         }
         return "-1";
     }
@@ -134,7 +130,6 @@ public class Methods {
         int[] mass = new int[]{-1};
         try {
             int[] massive = randomMassive(randomMassiveLength);
-            massPrintByString(massive);
             Arrays.sort(massive, 0, massive.length); //comment this line for result changes
             int errorcounter = 0;
 
@@ -144,14 +139,13 @@ public class Methods {
                 }
             }
             if (errorcounter > 0) {
-                System.out.print("Massive isn't sorted asc - ");
+               logger.info("Massive isn't sorted asc - " + massPrintByString(massive));
             } else
-                System.out.print("Massive is sorted asc - ");
-            massPrintByString(massive);
+                logger.info("Massive is sorted asc - " + massPrintByString(massive));
             return massive;
         } catch (Exception ex){
             ex.printStackTrace();
-            System.out.println("Error has happened");
+            logger.error("Error has happened");
            return mass;
         }
     }
@@ -166,7 +160,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int counter = 0;
 
             for (int i = 0; i < mass.length; i++) {
@@ -184,14 +177,13 @@ public class Methods {
                 }
             }
             if (counter == 0) {
-                System.out.print("There aren't pair elements = ");
+                logger.info("There aren't pair elements = " + massPrintByString(masspair));
             } else
-                System.out.print("Massive from pair elements = ");
-            massPrintByString(masspair);
+                logger.info("Massive from pair elements = "+ massPrintByString(masspair));
             return masspair;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         }
     }
@@ -207,7 +199,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] massRandom = randomMassive(randomMassiveLength);
-            massPrintByString(massRandom);
             int counter=0;
 
             for (int i = 0; i < massRandom.length; i++) {
@@ -217,17 +208,17 @@ public class Methods {
                     counter++;
             }
             if (counter == massRandom.length){
-                throw new AlexException("Element is bigger than all the elements. Replacement isn't performed"); //my exception example
+                throw new AlexException("Element is bigger than all the elements. Replacement isn't performed");//my exception example
             }
-            System.out.print("Massive from replaced elements = ");
-            massPrintByString(massRandom);
+            logger.info("Massive from replaced elements = " + massPrintByString(massRandom));
             return massRandom;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("Element is bigger than all the elements. Replacement isn't performed");
             return result;
         }
     }
@@ -240,7 +231,6 @@ public class Methods {
     public void positiveNegativeZero(int randomMassiveLength){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int possitive = 0;
             int negative = 0;
             int zeroes = 0;
@@ -253,12 +243,12 @@ public class Methods {
                 } else
                     zeroes++;
             }
-            System.out.println("Positive digits = " + possitive);
-            System.out.println("Negative digits = " + negative);
-            System.out.println("Zeroes digits = " + zeroes);
+            logger.info("Positive digits = " + possitive);
+            logger.info("Negative digits = " + negative);
+            logger.info("Zeroes digits = " + zeroes);
         } catch(IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         }
     }
 
@@ -271,7 +261,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int max = mass[0];
             int min = mass[0];
 
@@ -282,8 +271,8 @@ public class Methods {
                     min = mass[i];
                 }
             }
-            System.out.println("Max element = " + max);
-            System.out.println("Min element = " + min);
+            logger.info("Max element = " + max);
+            logger.info("Min element = " + min);
             int maxIndexCounter = 0;
             int minIndexCounter = 0;
 
@@ -297,12 +286,11 @@ public class Methods {
             int temp = mass[maxIndexCounter];
             mass[maxIndexCounter] = mass[minIndexCounter];
             mass[minIndexCounter] = temp;
-            System.out.print("Finish massive with replaced min and max element = ");
-            massPrintByString(mass);
+            logger.info("Finish massive with replaced min and max element = " + massPrintByString(mass));
             return mass;
         } catch(IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         }
     }
@@ -315,8 +303,7 @@ public class Methods {
     public void lessThanValue(int randomMassiveLength, int valueLimitation){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
-            System.out.println("Value for limitation = " + valueLimitation);
+            logger.info("Value for limitation = " + valueLimitation);
             int errorCount = 0;
 
             for (int i = 0; i < mass.length; i++) {
@@ -330,9 +317,10 @@ public class Methods {
             }
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("Limitation value is less that each of massive elements");
         }
     }
 
@@ -347,7 +335,6 @@ public class Methods {
         int[] resMass = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int counter = 0;
 
             for (int i = 0; i < mass.length; i++) {
@@ -367,15 +354,15 @@ public class Methods {
             if (counter == 0) {
                 throw new AlexException("There aren't values where remainder from divider " + divisionValue + " = " + remainder);
             }else
-                System.out.print("Result massive = ");
-            massPrintByString(result);
+                logger.info("Result massive = "+  massPrintByString(result));
             return result;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return resMass;
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("There aren't values where remainder from divider " + divisionValue + " = " + remainder);
             return resMass;
         }
     }
@@ -389,7 +376,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
 
             for (int i = 0; i < mass.length - 1; i = i + 2) {
                 int temp;
@@ -397,11 +383,11 @@ public class Methods {
                 mass[i] = mass[i + 1];
                 mass[i + 1] = temp;
             }
-            System.out.println("Result massive = " + Arrays.toString(mass));
+            logger.info("Result massive = " + Arrays.toString(mass));
             return mass;
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         }
     }
@@ -414,7 +400,6 @@ public class Methods {
     public void beforeZeroPrint(int randomMassiveLength){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int counter = 0;
 
             while(counter <= mass.length-1){
@@ -430,9 +415,10 @@ public class Methods {
             }
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("There isn't 0 in the generated massive");
         }
     }
 
@@ -443,7 +429,6 @@ public class Methods {
     public void minMaxPairSum(int randomMassiveLength){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int max = mass[0];
             int min = mass[1];
 
@@ -458,12 +443,12 @@ public class Methods {
                     min = mass[j];
                 }
             }
-            System.out.println("Max value of pair elements = " + max);
-            System.out.println("Min value of unpaired elements= " + min);
-            System.out.println("Max + Min = " + (max + min));
+            logger.info("Max value of pair elements = " + max);
+            logger.info("Min value of unpaired elements= " + min);
+            logger.info("Max + Min = " + (max + min));
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         }
     }
 
@@ -477,7 +462,6 @@ public class Methods {
     public int multipleBy(int randomMassiveLength, int value){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int counter = 0;
             int multiple = 1;
 
@@ -488,16 +472,17 @@ public class Methods {
                 }
             }
             if (counter > 0) {
-                System.out.println("Product of digits that are more than " + value + " = " + multiple);
+                logger.info("Product of digits that are more than " + value + " = " + multiple);
                 return multiple;
             } else
                 throw new AlexException("There aren't elements more than inputted value - " + value);
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return -1;
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("There aren't elements more than inputted value - " + value);
             return -1;
         }
     }
@@ -512,7 +497,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int max = mass[0];
 
             for (int i = 0; i < mass.length; i++) {
@@ -520,19 +504,18 @@ public class Methods {
                     max = mass[i];
                 }
             }
-            System.out.println("Max value = " + max);
+            logger.info("Max value = " + max);
 
             for (int j = 0; j < mass.length; j++) {
                 if (Math.abs(mass[j]) > max) {
                     mass[j] = 0;
                 }
             }
-            System.out.print("Result massive = ");
-            massPrintByString(mass);
+            logger.info("Result massive = " + massPrintByString(mass));
             return mass;
-        }catch (IndexOutOfBoundsException ex){
+        } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         }
     }
@@ -546,7 +529,6 @@ public class Methods {
     public void maxMinAbs(int randomMassiveLength){
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             int multipleNegative = 1;
             int multiplePossitive = 1;
             int counterFor1 = 0;
@@ -566,20 +548,21 @@ public class Methods {
             if (counterFor1 == 0) {
                 multiplePossitive = 0;
             }
-            System.out.println("Multiply of negative values = " + multipleNegative);
-            System.out.println("Multiply of positive values = " + multiplePossitive);
+            logger.info("Multiply of negative values = " + multipleNegative);
+            logger.info("Multiply of positive values = " + multiplePossitive);
             if (Math.abs(multipleNegative) > Math.abs(multiplePossitive)) {
-                System.out.println("Negative amount is > Positive amount");
+                logger.info("Negative amount is > Positive amount");
             } else if (Math.abs(multipleNegative) < Math.abs(multiplePossitive)) {
-                System.out.println("Positive amount is > Negative amount");
+                logger.info("Positive amount is > Negative amount");
             } else if (Math.abs(multipleNegative) == Math.abs(multiplePossitive)) {
                 throw new AlexException("Negative amount = Positive amount");
             }
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("Negative amount = Positive amount");
         }
     }
 
@@ -593,23 +576,25 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
+            int counter = 0;
 
             for (int i = 0; i < mass.length; i++) {
-                if (mass[i] > mass[i + 1]) {
+                if (mass[i] > mass[i+1]) {
                     mass[i] = 0;
-                    break;
-                } else if (mass[i] < mass[i + 1]) {
-                    mass[i + 1] = 0;
-                    break;
+                    counter++;
+                } else if(mass[i] < mass[i+1]) {
+                    mass[i+1] = 0;
+                    counter++;
+                }
+                if(counter != 0){
+                    i = mass.length;
                 }
             }
-            System.out.print("Result massive = ");
-            massPrintByString(mass);
+            logger.info("Result massive = " + massPrintByString(mass));
             return mass;
-        }catch (IndexOutOfBoundsException ex){
+        } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         }
     }
@@ -625,7 +610,6 @@ public class Methods {
         int[] result = new int[]{-1};
         try {
             int[] mass = randomMassive(randomMassiveLength);
-            massPrintByString(mass);
             String matching = Integer.toString(matchingValue);
             String[] str = new String[mass.length];
 
@@ -640,7 +624,7 @@ public class Methods {
                     lengthForFinalMassive--;
                 }
             }
-            System.out.println("Elements selection = " + Arrays.toString(str));
+            logger.info("Elements selection = " + Arrays.toString(str));
             int[] finalMassive = new int[lengthForFinalMassive];
             int j = 0;
 
@@ -655,53 +639,62 @@ public class Methods {
                 }
             }
             if(finalMassive.length != 0){
-                System.out.print("Result massive = ");
-                massPrintByString(finalMassive);
+                logger.info("Result massive = " + massPrintByString(finalMassive));
                 return finalMassive;
             }else
                 throw new AlexException("There aren't digits that finished on " + matching + " value");
         } catch (IndexOutOfBoundsException ex){
             ex.printStackTrace();
-            System.out.println("IndexOutOFBound error has happened");
+            logger.error("IndexOutOFBound error has happened");
             return result;
         } catch (AlexException ex){
             ex.printStackTrace();
+            logger.warn("There aren't digits that finished on " + matchingValue + " value");
             return result;
         }
     }
 
     private int[] randomMassive(int length){
         int[] massive = new int[length];
-        for(int i=0; i<massive.length; i++){
+        for(int i=0; i < massive.length; i++){
             massive[i] = (int)(-3 + (Math.random()* 12));
         }
-        System.out.print("Random massive generated = ");
+        logger.info("Random massive generated = " + massPrintByString(massive));
         return massive;
     }
 
     private ArrayList<Integer> randomList(int listLength){
         ArrayList<Integer> list = new ArrayList<>(listLength);
-        for(int i=0; i<listLength; i++){
+        for(int i=0; i < listLength; i++){
             list.add((int)(Math.random()* 10));
         }
         System.out.print("Random list generated = ");
         return list;
     }
 
-    private void massPrintByString(int [] mass){
-        System.out.println(Arrays.toString(mass));
+    private String massPrintByString(int [] mass){
+        return Arrays.toString(mass);
     }
 
     private void printByBruteForce(int [] mass){
-        for(int i=0; i<mass.length; i++){
+        for(int i=0; i < mass.length; i++){
             System.out.print(" " + mass[i] + " ");
         }
     }
 
     private void printByBruteForce(ArrayList<Integer> list){
-        for(int i=0; i<list.size(); i++){
-            System.out.print(" " + list.get(i) + " ");
+        for(int i=0; i < list.size(); i++){
+            System.out.print(" "+ list.get(i) + " ");
         }
+        System.out.println();
+    }
+
+    private String listPrintByString(ArrayList<Integer> list){
+        String result ="";
+        for(int i=0; i < list.size(); i++){
+            result = result.concat(" ").concat(Integer.toString(list.get(i)));
+        }
+        return result;
     }
 
     private int scanner(){

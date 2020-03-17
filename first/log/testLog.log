@@ -1,0 +1,197 @@
+17-03-2020 09:51:33   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 1 = 27
+17-03-2020 09:52:02  ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:53:38 ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:54:30  ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:54:37  ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:55:06  ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:55:13  ERROR [com.ua.okono.Methods:calculateMultipleBy] : Arithmetic error has happened
+17-03-2020 09:55:54   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 2
+17-03-2020 09:56:28   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:56:28   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 8
+17-03-2020 09:57:14   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:57:14   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 10
+17-03-2020 09:57:22   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:57:22   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 22
+17-03-2020 09:57:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:57:36   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 4
+17-03-2020 09:57:45   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:57:45   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 10
+17-03-2020 09:57:55   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated =
+17-03-2020 09:59:23   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 22
+17-03-2020 09:59:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:59:36   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 4
+17-03-2020 09:59:42   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 09:59:42   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 2
+17-03-2020 10:00:56   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 10:00:56   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 2
+17-03-2020 10:01:06   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 10:01:06   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = -6
+17-03-2020 10:02:19   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated =
+17-03-2020 10:02:19   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 0
+17-03-2020 10:02:25   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 10:02:25   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 22
+17-03-2020 10:02:42   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 10:02:42   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 28
+17-03-2020 10:04:03   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = 
+17-03-2020 10:04:03   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+17-03-2020 10:04:34   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated =
+17-03-2020 10:20:33   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 1, -1, 8, 0, 3, 5, 7]
+17-03-2020 10:20:33   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+17-03-2020 10:20:59   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, -2, 7, 3, 8, -1, 8, 4]
+17-03-2020 10:20:59   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 18
+17-03-2020 10:37:20  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : No elements found that equals to 3
+17-03-2020 10:38:13  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : No elements found that equals to 0
+17-03-2020 10:38:34  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : IndexOutOFBound error has happened
+17-03-2020 10:39:45   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 2, 0, 4, -2, 1, 1, 1, 8, 3]
+17-03-2020 10:40:45   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, 0, 1, 6, 7, 6, 4, 1, 8, 1]
+17-03-2020 10:46:43   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, -1, 0, 7, 7, 8, 6, 2, 3, 0]
+17-03-2020 10:46:43  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : IndexOutOFBound error has happened
+17-03-2020 10:47:03   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 5]
+17-03-2020 10:47:03  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:48:21   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, -2]
+17-03-2020 10:48:21  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:48:32   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 0, 6, 0, 2, 0, 3, 5, 2, 5]
+17-03-2020 10:48:48   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, 0, 8, 4, 0, 1, 6, 7, 2, 2]
+17-03-2020 10:50:22   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-1, 5, 1, -2, 7, 4, 8, 6, 6, 1]
+17-03-2020 10:50:22  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:50:27   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, 4, 1, 6, 3, 2, 2, 3, -1, 3]
+17-03-2020 10:50:27  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:50:30   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 8, 7, 8, 8, 8, 1, 6, 5, 8]
+17-03-2020 10:50:30  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:50:33   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 5, 7, 4, 4, 7, 6, 8, 5, 1]
+17-03-2020 10:50:33  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+17-03-2020 10:50:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 2, 1, 0, 7, 0, 3, 1, 2, -1]
+17-03-2020 10:52:06   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 0, 1, 3, 2, 0, -2, 1, 6, 6]
+17-03-2020 10:52:06   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [1, 5]
+17-03-2020 11:01:23  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : IndexOutOFBound error has happened
+17-03-2020 11:15:51  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : No elements found that equals to 0
+17-03-2020 11:26:57   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  0
+17-03-2020 11:27:30   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  1 6
+17-03-2020 11:27:51   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  5
+17-03-2020 11:28:53   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  0 8
+17-03-2020 11:29:13   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  7
+17-03-2020 11:32:28   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  2
+17-03-2020 11:32:36  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : No elements found that equals to 0
+17-03-2020 11:33:13  ERROR [com.ua.okono.Methods:createMassiveFromIndexList] : No elements found that equals to 0
+17-03-2020 11:33:28   INFO [com.ua.okono.Methods:createMassiveFromIndexList] : Array of indexes for elements that equals to 0 =  7
+17-03-2020 11:37:00   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 5, 7, 7, 1, -1, 0, 5, 6, 1]
+17-03-2020 11:37:00   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [0, 6]
+17-03-2020 11:42:54   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 1, -1]
+17-03-2020 11:43:45   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 4, 4]
+17-03-2020 11:43:45   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+17-03-2020 11:43:57   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 0, 5]
+17-03-2020 11:43:57  ERROR [com.ua.okono.Methods:firstPositiveOrNegative] : IndexOutOFBound error has happened
+17-03-2020 11:58:18   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 2, 7]
+17-03-2020 11:58:18   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+17-03-2020 11:58:21   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, 3, 3]
+17-03-2020 11:58:21   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+17-03-2020 11:58:24   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, -1, 2]
+17-03-2020 11:58:24   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+17-03-2020 11:59:57   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 2, 0, -1, 3]
+17-03-2020 11:59:57   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+17-03-2020 12:00:21   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, -2, 8, 1, 7, 6, 8, 8, -1, 6]
+17-03-2020 12:00:21   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - 
+17-03-2020 12:02:13   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [7, 4, -2, 8, 1, -1, 0, 0, 3, 6]
+17-03-2020 12:02:13   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-2, -1, 0, 0, 1, 3, 4, 6, 7, 8]
+17-03-2020 12:02:24   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 5, 1, 0, -1, 4, 8, 5, -1, 7]
+17-03-2020 12:02:24   INFO [com.ua.okono.Methods:isSortingAsc] : Massive isn't sorted asc - 
+17-03-2020 12:02:40   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 8, 3, 7, -1, 8, 1, 0, 6, 7]
+17-03-2020 12:02:40   INFO [com.ua.okono.Methods:isSortingAsc] : Massive isn't sorted asc - [0, 8, 3, 7, -1, 8, 1, 0, 6, 7]
+17-03-2020 12:02:48   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 4, 5, 4, 8, -1, 0, 8, 3, 4]
+17-03-2020 12:02:48   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 0, 1, 3, 4, 4, 4, 5, 8, 8]
+17-03-2020 12:33:15   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-1, 1, 7, 0, 4, 0, 2, 8, 6, 0]
+17-03-2020 12:33:15   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 0, 0, 0, 1, 2, 4, 6, 7, 8]
+17-03-2020 12:34:58   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2]
+17-03-2020 12:34:58   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [-2]
+17-03-2020 12:35:08   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 1, 2, 6, 6]
+17-03-2020 12:35:08   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [4, 2, 6, 6]
+17-03-2020 12:35:12   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 0, -2, 6, 4]
+17-03-2020 12:35:12   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [6, -2, 6, 4]
+17-03-2020 12:35:40   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, -2, 0, -1, -2]
+17-03-2020 12:35:40  ERROR [com.ua.okono.Methods:pairElementsCheck] : IndexOutOFBound error has happened
+17-03-2020 12:38:47   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 8, 7, 4, 3, 2, 2, 3, 8, 3]
+17-03-2020 12:39:27   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, 0, -1, 2, 7, -1, 2, -1, 8, 3]
+17-03-2020 12:39:27   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [3, 0, -1, 2, 3, -1, 2, -1, 3, 3]
+17-03-2020 12:43:44   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 6, 4, 7, 1, 4, 5, 2, 2, 7]
+17-03-2020 12:43:44   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [3, 3, 3, 3, 1, 3, 3, 2, 2, 3]
+17-03-2020 12:43:53   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 4, 5, 2, 6, 7, 0, 2, 6, 4]
+17-03-2020 12:43:53   INFO [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+17-03-2020 12:44:47   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, -2, 5, 2, 5, 4, 8, 8, -2, 3]
+17-03-2020 12:44:47   INFO [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+17-03-2020 12:44:56   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 1, 6, 0, 6, 8, 2, 6, -1, -2]
+17-03-2020 12:44:56  ERROR [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+17-03-2020 12:46:53   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 5, 6, 1, -1, 2, 0, 2, 7, 3, 2, -2, 5, 2]
+17-03-2020 12:46:53   INFO [com.ua.okono.Methods:positiveNegativeZero] : Positive digits = 11
+17-03-2020 12:46:53   INFO [com.ua.okono.Methods:positiveNegativeZero] : Negative digits = 2
+17-03-2020 12:46:53   INFO [com.ua.okono.Methods:positiveNegativeZero] : Zeroes digits = 1
+17-03-2020 12:49:17   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, -2, 8, 7, 2, 0, 7, 3, 6, 4]
+17-03-2020 12:50:21   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 3, 2, 3, 5, 8, -2, 6, -2, 6]
+17-03-2020 12:51:14   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 1, 4, 0, 2, 4, 8, -1, 1, 4]
+17-03-2020 12:55:14   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 1, 5, 0, 7, 8, 7, 2, 1, 0]
+17-03-2020 12:55:14  ERROR [com.ua.okono.Methods:lessThanValue] : IndexOutOFBound error has happened
+17-03-2020 12:55:43   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, -1, 0, 6, 6, 5, 3, -1, 8, 6]
+17-03-2020 12:55:43   INFO [com.ua.okono.Methods:lessThanValue] : Value for limitation = 2
+17-03-2020 12:56:56   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, 7, -2, 6, 0]
+17-03-2020 12:57:18   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 6, 1, 7, 1]
+17-03-2020 12:57:18   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [6, 6]
+17-03-2020 12:57:41   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, -1, 7, 6, -1]
+17-03-2020 12:58:04   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 5, 0, -2, 1]
+17-03-2020 12:58:04  ERROR [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 2 = 4
+17-03-2020 12:58:30   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 0, 6, 5, 5]
+17-03-2020 12:58:30   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 2 = 4
+17-03-2020 13:00:09   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, 4, -1, 7, 0]
+17-03-2020 13:00:09   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4, 0]
+17-03-2020 13:00:49   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 2, -1, -1]
+17-03-2020 13:00:49   INFO [com.ua.okono.Methods:replace] : Result massive = [2, 6, -1, -1]
+17-03-2020 13:02:13   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, -2, -1]
+17-03-2020 13:02:13   WARN [com.ua.okono.Methods:beforeZeroPrint] : There isn't 0 in the generated massive
+17-03-2020 14:10:58   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, 0, 0, 1, 0]
+17-03-2020 14:10:58   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 8
+17-03-2020 14:10:58   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+17-03-2020 14:10:58   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 8
+17-03-2020 14:12:33   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 6, -1, 1, 0]
+17-03-2020 14:12:59   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 4, 8, -2, 7]
+17-03-2020 14:12:59   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 7 = 8
+17-03-2020 14:13:01   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, -1, -1, -2, -1]
+17-03-2020 14:13:01   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 7 = 8
+17-03-2020 14:13:06   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, -2, 5, 3, 0]
+17-03-2020 14:13:06   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 7
+17-03-2020 14:13:54   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 3, 6, 5]
+17-03-2020 14:13:54   INFO [com.ua.okono.Methods:modularity] : Result massive = [5, 3, 6, 5]
+17-03-2020 14:14:08   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [7, 0, 2, 1]
+17-03-2020 14:14:08   INFO [com.ua.okono.Methods:modularity] : Max value = 7
+17-03-2020 14:14:08   INFO [com.ua.okono.Methods:modularity] : Result massive = [7, 0, 2, 1]
+17-03-2020 14:15:57   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 1, 0, 8]
+17-03-2020 14:15:57   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 0
+17-03-2020 14:15:57   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 8
+17-03-2020 14:15:57   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+17-03-2020 14:16:14   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 0]
+17-03-2020 14:16:14   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 0
+17-03-2020 14:16:14   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 1
+17-03-2020 14:16:14   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+17-03-2020 14:16:19   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+17-03-2020 14:16:25   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0]
+17-03-2020 14:16:25   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 0
+17-03-2020 14:16:25   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 0
+17-03-2020 14:16:25   WARN [com.ua.okono.Methods:maxMinAbs] : Negative amount = Positive amount
+17-03-2020 14:17:56   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 7, 0, 7, 0]
+17-03-2020 14:17:56   INFO [com.ua.okono.Methods:firstMax] : Result massive = [3, 0, 0, 7, 0]
+17-03-2020 14:34:28   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 1, 0, 2, 2]
+17-03-2020 14:34:28  ERROR [com.ua.okono.Methods:firstMax] : IndexOutOFBound error has happened
+17-03-2020 14:35:05   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [8, -1, 7, 8, 4]
+17-03-2020 14:35:05  ERROR [com.ua.okono.Methods:firstMax] : IndexOutOFBound error has happened
+17-03-2020 14:35:29   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 3, 3]
+17-03-2020 14:57:32   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 5, 0, 7, 5]
+17-03-2020 14:57:32   INFO [com.ua.okono.Methods:firstMax] : Result massive = [-2, 0, 0, 7, 5]
+17-03-2020 14:57:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 7, 8, 2, 2]
+17-03-2020 14:57:36   INFO [com.ua.okono.Methods:firstMax] : Result massive = [5, 0, 8, 2, 2]
+17-03-2020 14:57:39   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [7, 3, 0, 8, 6]
+17-03-2020 14:57:39   INFO [com.ua.okono.Methods:firstMax] : Result massive = [0, 3, 0, 8, 6]
+17-03-2020 14:57:42   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 1, 0, 7, 0]
+17-03-2020 14:57:42   INFO [com.ua.okono.Methods:firstMax] : Result massive = [0, 0, 0, 7, 0]
+17-03-2020 15:06:52   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 0, 0, 0, 0, -2, 4, -2, -2, 2]
+17-03-2020 15:06:52   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -, -2, -, -2, -2, 2]
+17-03-2020 15:06:52   INFO [com.ua.okono.Methods:lastElement] : Result massive = [-2, -2, -2, 2]
+17-03-2020 15:07:01   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 0, -1, 4, 4, 3, 4, 7, 7, 0]
+17-03-2020 15:07:01   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -, -, -, -, -, -]
+17-03-2020 15:07:01   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 28 value
