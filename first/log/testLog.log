@@ -195,3 +195,305 @@
 17-03-2020 15:07:01   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 0, -1, 4, 4, 3, 4, 7, 7, 0]
 17-03-2020 15:07:01   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -, -, -, -, -, -]
 17-03-2020 15:07:01   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 28 value
+18-03-2020 14:53:26   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [2, 5, 0, 3, 7, 3, 2, 2]
+18-03-2020 14:53:26   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+18-03-2020 14:58:52   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, -2, 5, -2, 7, 2, 0, -2]
+18-03-2020 14:58:52   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 0
+18-03-2020 14:58:52   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 1, 2, 6, 5, 5, 6, 2]
+18-03-2020 14:58:52   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 16
+18-03-2020 14:59:07   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-2, 0, 6, 4, 0, 3, 8, 0]
+18-03-2020 14:59:07   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 16
+18-03-2020 15:00:03   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [-1, 2, 1, 5, 4, 5, -2, 8]
+18-03-2020 15:00:03   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 0
+18-03-2020 15:00:08   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 1, 7, 2, 5, -2, 0, 5]
+18-03-2020 15:00:08   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 0
+18-03-2020 15:00:15   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 2, 0, 8, -2, 8, 1, 6]
+18-03-2020 15:00:15   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 9
+18-03-2020 15:00:26   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 0, 7, 4, 4, 1, 3, 4, 7, -2]
+18-03-2020 15:00:26   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 3
+18-03-2020 15:00:58   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [7, 7, 5, 8, 8, 0, 7, 6, 7, -1]
+18-03-2020 15:00:58   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 6
+18-03-2020 15:01:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [3, 4, 8, 1, 0, 6, 0, 1, 8, 0]
+18-03-2020 15:01:36   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 3 = 9
+18-03-2020 15:01:36   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [1, 7, 0, 7, 0, 5, 7, 0, 5, -1]
+18-03-2020 15:01:36   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4, 7]
+18-03-2020 15:01:41   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [0, 6, 5, -2, -1, 0, 6, 6, -1, 5]
+18-03-2020 15:01:41   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [0, 5]
+18-03-2020 15:01:58   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [6, 7, 1, 5, -2, 1, 6, -1, 1, 5]
+18-03-2020 15:01:58  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+18-03-2020 15:02:02   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [5, 4, 1, 5, -1, 0, 8, 0, 1, 8]
+18-03-2020 15:02:02   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [5, 7]
+18-03-2020 15:02:30   INFO [com.ua.okono.Methods:randomMassive] : Random massive generated = [4, 8, 8, 8, -2]
+18-03-2020 15:02:30   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 09:41:50   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:43:37   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:43:46   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:43:53   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:53:32   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:53:46  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 09:53:58   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 1 = [2, 4]
+19-03-2020 09:54:09  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 09:56:40   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 09:56:40  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 09:56:50  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 09:57:08  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 10:00:25   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 10:00:31   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 10:00:38   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 10:01:56   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:02:04   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:02:22   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:02:34   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:02:43   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:03:08   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:03:24   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:03:33   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 10:08:35   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 1, 2, 3, 5]
+19-03-2020 10:09:01   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 1, 2, 3, 5]
+19-03-2020 10:19:51   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8, 2]
+19-03-2020 10:20:55   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8, 2]
+19-03-2020 10:21:03   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8, 2]
+19-03-2020 10:21:23   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8]
+19-03-2020 10:39:46   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 2, 2]
+19-03-2020 10:39:46   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  5
+19-03-2020 10:39:59   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 2, 2, 1]
+19-03-2020 10:39:59   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  5
+19-03-2020 10:40:41   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 2, 2, 1]
+19-03-2020 10:40:41   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  3
+19-03-2020 10:41:33   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1]
+19-03-2020 10:41:33   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:41:40   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 2, 1]
+19-03-2020 10:41:40   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  3
+19-03-2020 10:41:49   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 10:41:49   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:42:27   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 10:42:27   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:42:33   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 10:42:33   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:44:15   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 10:44:15   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:44:22   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 10:44:22   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 10:45:17   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [3, 1, -2, 3, 2]
+19-03-2020 10:45:17   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  1
+19-03-2020 10:45:21   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [3, 1, -2, 3, 2]
+19-03-2020 10:45:21   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  1
+19-03-2020 10:45:30   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [3, 1, -2, 3, 2]
+19-03-2020 10:45:30   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  1
+19-03-2020 10:47:48   WARN [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+19-03-2020 10:48:05   WARN [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+19-03-2020 10:54:10   INFO [com.ua.okono.Methods:positiveNegativeZero] : Positive digits = 5
+19-03-2020 10:54:10   INFO [com.ua.okono.Methods:positiveNegativeZero] : Negative digits = 1
+19-03-2020 10:54:10   INFO [com.ua.okono.Methods:positiveNegativeZero] : Zeroes digits = 2
+19-03-2020 10:54:19   INFO [com.ua.okono.Methods:positiveNegativeZero] : Positive digits = 5
+19-03-2020 10:54:19   INFO [com.ua.okono.Methods:positiveNegativeZero] : Negative digits = 1
+19-03-2020 10:54:19   INFO [com.ua.okono.Methods:positiveNegativeZero] : Zeroes digits = 2
+19-03-2020 11:08:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:08:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:08:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:10:05   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:10:05   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:10:05   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:10:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:10:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:10:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:12:02   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:12:02   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:12:02   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:12:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:12:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:12:11   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:12:37   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:12:37   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:12:37   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:12:46   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:12:46   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:12:46   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:13:10   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 11:13:10   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 11:13:10   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 11:29:18   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 11:31:06   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 11:31:12   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 11:32:17   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:34:23   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [1]
+19-03-2020 11:34:49   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:35:34   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:38:41   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:39:26   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:39:56   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 11:40:02   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 5 = 0
+19-03-2020 11:40:13   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [1, 3]
+19-03-2020 11:40:34   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:44:31   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:44:49   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:45:14   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:46:42   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:47:11   WARN [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:49:01   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:49:24   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:49:38   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:49:45   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:49:53   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 11:56:12   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:56:59   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:57:42   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:58:53   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:58:53   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:59:04   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:59:04   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:59:17   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 11:59:17   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 12:20:52   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 12:20:52   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 12:20:52   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 12:20:59   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 12:20:59   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 12:20:59   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 12:22:36   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 12:22:46   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 12:22:46   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 12:22:46   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 12:32:08   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 2 = 12
+19-03-2020 12:32:14   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 2 = 12
+19-03-2020 12:33:35   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 12:33:50   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 12:33:57   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 12:34:06   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 12:34:26   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 14:13:01   INFO [com.ua.okono.Methods:modularity] : Max value = 4
+19-03-2020 14:13:01   INFO [com.ua.okono.Methods:modularity] : Result massive = [4, 2, 1, 0, 3, 1]
+19-03-2020 14:14:10   INFO [com.ua.okono.Methods:modularity] : Max value = 4
+19-03-2020 14:14:10   INFO [com.ua.okono.Methods:modularity] : Result massive = [4, 0, 1, 0, 0, 3]
+19-03-2020 14:15:38   INFO [com.ua.okono.Methods:modularity] : Max value = 4
+19-03-2020 14:15:38   INFO [com.ua.okono.Methods:modularity] : Result massive = [4, 0, 1, 0, 0, 3]
+19-03-2020 14:21:28   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 90
+19-03-2020 14:21:28   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:21:28   INFO [com.ua.okono.Methods:maxMinAbs] : Negative amount is > Positive amount
+19-03-2020 14:22:16   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 90
+19-03-2020 14:22:16   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:22:16   INFO [com.ua.okono.Methods:maxMinAbs] : Negative amount is > Positive amount
+19-03-2020 14:22:22   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 90
+19-03-2020 14:22:22   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:22:22   INFO [com.ua.okono.Methods:maxMinAbs] : Negative amount is > Positive amount
+19-03-2020 14:24:54   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = -90
+19-03-2020 14:24:54   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 1440
+19-03-2020 14:24:54   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+19-03-2020 14:27:44   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = -90
+19-03-2020 14:27:44   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 1440
+19-03-2020 14:48:25   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
+19-03-2020 14:48:33   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -]
+19-03-2020 14:48:33   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
+19-03-2020 14:51:51   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:calculateMultipleBy] : No elements found that multiple by 7
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 14:52:15  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 1, 2, 3, 5]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8, 2]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 14:52:15   WARN [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:positiveNegativeZero] : Positive digits = 5
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:positiveNegativeZero] : Negative digits = 1
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:positiveNegativeZero] : Zeroes digits = 2
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements= 0
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 2 = 12
+19-03-2020 14:52:15   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:modularity] : Max value = 4
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:modularity] : Result massive = [4, 0, 1, 0, 0, 3]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 90
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Negative amount is > Positive amount
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = -90
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 1440
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = -30
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:52:15   WARN [com.ua.okono.Methods:maxMinAbs] : Negative amount = Positive amount
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:firstMax] : Result massive = [1, 0, 3]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:firstMax] : Result massive = [1, 0, 3]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, 2, -, 22]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:lastElement] : Result massive = [2, 22]
+19-03-2020 14:52:15   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -]
+19-03-2020 14:52:15   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:calculateMultipleBy] : The summ of elements multiple by 2 = 6
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:calculateMultipleBy] : No elements found that multiple by 7
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:createMassiveFromIndexMassive] : Array of indexes for elements that equals to 0 = [2, 4]
+19-03-2020 14:56:30  ERROR [com.ua.okono.Methods:createMassiveFromIndexMassive] : No elements found that equals to 0
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is positive
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:firstPositiveOrNegative] : First element is negative
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:isSortingAsc] : Massive is sorted asc - [-1, 1, 2, 3, 5]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8, 2]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:pairElementsCheck] : Massive from pair elements = [2, 8]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:digitReplacement] : Massive from replaced elements = [2, 2, 2, 1, 1]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:digitReplacement] : The number of replacement =  2
+19-03-2020 14:56:30   WARN [com.ua.okono.Methods:digitReplacement] : Element is bigger than all the elements. Replacement isn't performed
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:positiveNegativeZero] : Positive digits = 5
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:positiveNegativeZero] : Negative digits = 1
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:positiveNegativeZero] : Zeroes digits = 2
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Max element = 3
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Min element = 1
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxReplacement] : Finish massive with replaced min and max element = [3, 2, 1]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:remainderFromDivision] : Result massive = [2, 4]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:remainderFromDivision] : There aren't values where remainder from divider 7 = 0
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:replace] : Result massive = [-11, 6, 0, 2, 7, 3]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements = 0
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Max value of pair elements = 4
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Min value of unpaired elements = 0
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:minMaxPairSum] : Max + Min = 4
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:multipleBy] : Product of digits that are more than 2 = 12
+19-03-2020 14:56:30   WARN [com.ua.okono.Methods:multipleBy] : There aren't elements more than inputted value - 5
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:modularity] : Max value = 4
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:modularity] : Result massive = [4, 0, 1, 0, 0, 3]
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = 90
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:56:30   INFO [com.ua.okono.Methods:maxMinAbs] : Negative amount is > Positive amount
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 1440
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:maxMinAbs] : Positive amount is > Negative amount
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of negative values = -30
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:maxMinAbs] : Multiply of positive values = 30
+19-03-2020 14:59:24   WARN [com.ua.okono.Methods:maxMinAbs] : Negative amount = Positive amount
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:firstMax] : Result massive = [1, 0, 3]
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:firstMax] : Result massive = [1, 0, 3]
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, 2, -, 22]
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:lastElement] : Result massive = [2, 22]
+19-03-2020 14:59:24   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -]
+19-03-2020 14:59:24   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
+19-03-2020 14:59:47   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, 2, -, 22]
+19-03-2020 14:59:47   INFO [com.ua.okono.Methods:lastElement] : Result massive = [2, 22]
+19-03-2020 14:59:47   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -]
+19-03-2020 14:59:47   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
+19-03-2020 15:03:46   INFO [com.ua.okono.Methods:lastElement] : Elements selection = [-, -, -, -, -]
+19-03-2020 15:03:46   WARN [com.ua.okono.Methods:lastElement] : There aren't digits that finished on 8 value
